@@ -1,0 +1,68 @@
+<ion-header class="ion-no-border">
+  <app-header [showLocation]="true"></app-header>
+  <ion-item class="searchbar">
+    <ion-icon name="search-outline" src="assets/icon/search.svg" color="primary" slot="start" class="mr13"></ion-icon>
+    <ion-input placeholder="Search item, restaurant or place...."></ion-input>
+    <div class="custom-divider"></div>
+    <ion-icon src="assets/icon/filter.svg" color="primary" slot="end"></ion-icon>
+  </ion-item>
+</ion-header>
+
+<ion-content >
+  <div class="clubs">
+    <ion-grid>
+      <ion-row>
+      <ion-col size="6">
+        <ion-row class="box first-box">
+          <ion-col size="6" class="text">
+            <ion-label color="primary">Cluds</ion-label>
+            <ion-text class="m0">Member</ion-text>
+            <ion-text class="m0">Exclusive</ion-text>
+          </ion-col>
+          <ion-col size="6" class="ion-text-end">
+            <img class="mt42" src="assets/images/clubs.svg" />
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-row class="box secound-box">
+          <ion-col size="6" class="text">
+            <ion-label color="primary">Cluds</ion-label>
+            <ion-text class="m0">Member</ion-text>
+            <ion-text class="m0">Exclusive</ion-text>
+          </ion-col>
+          <ion-col size="6" class="ion-text-end">
+            <img class="mt42" src="assets/images/corporate.svg" />
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="top-items">
+    <ion-text class="title">Top Cuisines</ion-text>
+    <app-item-slider [items]="topCuisines"></app-item-slider>
+  </div>
+  <div class="banner">
+    <app-banner-slider [banners]="bannerList"></app-banner-slider>
+  </div>
+  <div class=" top-items trending-offers">
+    <ion-text class="title">Trending Offers</ion-text>
+    <app-small-offer-card [items]="trendingOffers"></app-small-offer-card>
+  </div>
+  <div class="top-items mt15">
+    <ion-text class="title">Popular Brands</ion-text>
+    <app-item-slider [items]="popularBrands"></app-item-slider>
+  </div>
+  <div class="past-orders mt15">
+    <ion-text class="title">Favorites & Past Orders</ion-text>
+    <ion-text class="ion-float-right history" >Order History <ion-icon name="chevron-forward-outline"></ion-icon></ion-text>
+  <app-small-item-card [Items]="orderHistory"></app-small-item-card>
+  </div>
+  <div class="explore mt15">
+    <ion-text class="title">Explore Restraunts</ion-text>
+ <app-large-item-card [Items]="explore"></app-large-item-card>
+  </div>
+</ion-content>

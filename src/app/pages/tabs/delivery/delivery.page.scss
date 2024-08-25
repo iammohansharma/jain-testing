@@ -1,0 +1,83 @@
+ion-header{
+    ion-toolbar{
+        padding: 0 10px;
+        --background: transparent;
+    }
+    box-shadow: 0px 0px 6px 1px #00000014 !important;
+ background: #FAFAFA;
+ .location{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+ }
+ .searchbar{
+    border: 1px solid #EBEBEB;
+    margin: 7px 10px;
+    box-shadow: 0px 0px 8px 2px #0000000D;
+    border-radius: 12px;
+    margin-bottom: 21px;
+    ion-item{
+        color: #B2AEB9;
+    }
+ }
+}
+
+ion-content{
+ .clubs{
+    .box{
+        width: 100%;
+        padding: 10px;
+        box-shadow: -1px 2px 6px 0px #00000021;
+        border-radius: 5px;
+    }
+    .first-box{
+        background: linear-gradient(312.82deg, rgba(245, 39, 163, 0.5) -56.86%, rgba(255, 255, 255, 0) 105.11%);
+    }
+    .secound-box{
+        background: linear-gradient(312.82deg, rgba(39, 121, 245, 0.59) -56.86%, rgba(255, 255, 255, 0) 105.11%);
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        ion-text{
+            color: #A8A8A8;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        ion-label{
+            color: #7527F5;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+ }
+
+ .top-items{
+    padding: 22px 10px;
+    background: #F9F8F8
+    ;
+ }
+ .trending-offers{
+    padding: 22px 10px;
+    background: #F9F8F8;
+ }
+ .past-orders{
+    padding: 22px 10px;
+    background: #F9F8F8;
+ }
+ .explore{
+    padding: 22px 10px;
+    background: #F9F8F8
+    ;
+ }
+ .history{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #2962EB;
+ }
+}

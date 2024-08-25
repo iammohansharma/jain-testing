@@ -1,0 +1,7 @@
+<div class="banner-slider">
+  <swiper-container [pagination]="true">
+    <swiper-slide *ngFor="let banner of banners">
+      <img [src]="banner" style="width: 100%;" />
+    </swiper-slide>
+  </swiper-container>
+</div>

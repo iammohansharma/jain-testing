@@ -1,0 +1,21 @@
+<div class="all-items">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of Items" >
+     <ion-row>
+      <ion-col size="6" class="p0">
+        <img [src]="item.image"  />
+      </ion-col>
+      <ion-col size="6" class="all-info">
+        <ion-text class="item-title">{{item.name}}</ion-text>
+        <div style="display: flex; flex-direction: column;">
+          <ion-text class="item-rating">{{item.duration}} | {{item.rating}}</ion-text>
+        <ion-text class="item-more">{{item.more}}</ion-text>
+        </div>
+      </ion-col>
+
+     </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

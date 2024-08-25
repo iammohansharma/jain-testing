@@ -1,0 +1,7 @@
+{
+  "name": "jain-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

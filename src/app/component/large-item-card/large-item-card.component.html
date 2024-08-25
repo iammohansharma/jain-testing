@@ -1,0 +1,39 @@
+<ion-grid>
+  <ion-row *ngFor="let item of Items" class="main" routerLink="/restaurant-detail">
+    <ion-row class="wp100">
+      <img style="width: 100%;" [src]="item.image" />
+    </ion-row>
+    <ion-row class="pl10 pr10 wp100">
+      <ion-col size="6">
+        <ion-text class="title">{{item.name}}</ion-text>
+        <div class="text mt10">
+          <ion-label class="subtitle">{{item.location}}</ion-label>
+          <p class="m0">{{item.speciality}}</p>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-end details">
+        <ion-text ><ion-icon name="star" color="green" ></ion-icon> {{item.rating}} </ion-text>
+        <div class="text mt10">
+          <ion-label class="subtitle">{{item.comboDiscount}}</ion-label>
+          <ion-label color="green" style="font-weight: 800;">{{item.offer}}</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="pl10 pr10 wp100 more-information">
+      <ion-col size="9">
+        <ion-text class="s14">{{item.review}}</ion-text>
+      </ion-col>
+      <ion-col size="3" class="ion-text-end">
+        <ion-icon src="assets/icon/location.svg" color="primary"></ion-icon>
+        <ion-text class="subtitle">{{item.distance}}</ion-text>
+      </ion-col>
+
+    </ion-row>
+
+    <div class="horizontal-discount-banner">
+      <ion-text class="s14">Flat</ion-text> <p class="s14 m0" style="font-weight: 800;">{{item.discount}}% Off</p> 
+      </div>
+  </ion-row>
+
+</ion-grid>

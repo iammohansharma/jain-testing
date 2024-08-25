@@ -1,0 +1,8 @@
+<div class="all-items">
+  <div class="offers" *ngFor="let item of items">
+    <img [src]="item.image" />
+    <div class="vertical-discount-banner">
+    <ion-text class="s14">Flat</ion-text> <ion-text class="s14" style="font-weight: 800;">{{item.discount}}%</ion-text> <ion-text class="s14">Off</ion-text>
+    </div>
+  </div>
+</div>

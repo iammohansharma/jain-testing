@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    background: white;
+    padding: 10px 10px;
+    box-shadow: 0px 4px 9px 0px #00000024;
+    /* height: 97px; */
+    border-radius: 30px;
+     margin-right: 32px;
+    .item-title{
+        padding-bottom: 7px;
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+}
+.all-items{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding-bottom: 10px;
+}

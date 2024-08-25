@@ -1,0 +1,27 @@
+ion-content {
+    --background: #E8E3E3;
+  }
+  
+  .otp-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  .otp-button {
+    --background: #6200ee;
+    --border-radius: 24px;
+  }
+  
+  .link {
+    color: #6200ee;
+    text-decoration: none;
+  }
+  ion-grid{
+    padding: 0;
+  }
+  h2{
+    color: #6E6D70;
+  }

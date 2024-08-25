@@ -1,0 +1,36 @@
+<ion-grid class="p0">
+  <ion-row class="mx10">
+    <ion-text class="title mt10 mb10">Top Seller ({{Items.length}})</ion-text>
+  </ion-row>
+  <ion-row *ngFor="let item of Items" class="main mx10">
+    <ion-col size="8">
+      <ion-row>  
+          <ion-badge color="yellow" class="mr20"><ion-icon name="star"></ion-icon>{{item.badge}}</ion-badge>
+          <ion-icon [src]="item.veg ? 'assets/icon/veg.svg' : 'assets/icon/non-veg.svg' "></ion-icon>
+      </ion-row>
+
+      <ion-row class="wp100 mt5">
+        <ion-text class="subtitle">{{item.name}}</ion-text>
+        <p class="m0">
+          {{item.desc}}
+        </p>
+      </ion-row>
+      <ion-row class="prices">
+        <ion-text class="subtitle vertical-strike" *ngIf="item?.cutdownPrice"> {{item.cutdownPrice}} </ion-text> &nbsp;
+        <ion-text class="subtitle" *ngIf="item?.price"> {{item.price}} </ion-text>&nbsp;
+        <ion-text class="subtitle " *ngIf="item?.discount && !item.available" style="color: #7427F5 !important;"> ({{item.discount}})  </ion-text>
+        <ion-text  *ngIf="item?.available" class="s12" style="color: #E92A28;">{{item.available}} </ion-text>
+
+      </ion-row>
+    </ion-col>
+    <ion-col size="4">
+      <img src="assets/images/pizza.png" style="position: relative; width: 100%;" />
+      <ion-icon name="heart" class="fav"></ion-icon>
+      <div class="add">
+        <ion-text *ngIf="!checkAlreadyExist(item.name)" color="primary" (click)="addToCart(item)">+ ADD</ion-text>
+        <ion-text *ngIf="checkAlreadyExist(item.name)" color="primary" (click)="removeToCart(item)">Remove</ion-text>
+      </div>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>

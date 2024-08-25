@@ -1,0 +1,49 @@
+.subtitle{
+    font-weight: 800;
+color: #464646;
+font-size: 16px;
+}
+p{
+    font-size: 14px;
+    color: #6E6D70;
+    font-weight: 400;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    margin-top: 12px;
+}
+.search-bar{
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #EBEBEB;
+    ion-input{
+        color: #6E6D70;
+    }
+}
+ion-toggle{
+    --handle-width: 16px;
+
+    ion-text{
+        font-weight: 800;
+    }
+.native-wrapper .toggle-icon {
+    width: 51px;
+    height: 18px !important;
+    overflow: hidden;
+  }
+}
+
+.native-wrapper .toggle-icon {
+    width: 51px;
+    height: 18px !important;
+    overflow: hidden;
+  }

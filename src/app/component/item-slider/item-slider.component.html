@@ -1,0 +1,7 @@
+<div class="all-items">
+  <div class="main" *ngFor="let item of items">
+    <img [src]="item.image" />
+    <ion-text class="item-title">{{item.name}}</ion-text>
+    <ion-text *ngIf="item?.duration">{{item.duration}}</ion-text>
+  </div>
+</div>

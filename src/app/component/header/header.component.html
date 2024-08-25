@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+   <div *ngIf="showLocation" class="location">
+    <ion-icon src="assets/icon/location.svg" color="primary" class="s22" ></ion-icon>
+    <ion-label class="title" >RT Nagar</ion-label>
+    <ion-icon src="assets/icon/drop-down.svg" color="primary" class="s13 mt5"></ion-icon>
+   </div>
+   <!-- <ion-buttons *ngIf="showBackButton" slot="start">
+    <ion-back-button defaultHref="/tabs/delivery" color="primary" mode="md">
+    </ion-back-button>
+  </ion-buttons> -->
+  <ion-icon *ngIf="showBackButton" name="arrow-back-outline" slot="start" routerLink="/tabs/delivery" class="s25"></ion-icon>
+<div class="cart" style="position: relative;" slot="end">
+  <ion-icon name="cart-outline" class="s29" >
+  </ion-icon>
+  <ion-text class="cart-numbers">{{cartNumber}}</ion-text>
+</div>
+ 
+   
+  </ion-toolbar>
+</ion-header>

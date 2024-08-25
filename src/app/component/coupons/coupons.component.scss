@@ -1,0 +1,27 @@
+.all-items{
+    overflow: scroll;
+    border-radius: 12px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    gap: 17px;
+    overflow-x: auto;
+    overflow-y: hidden; 
+}
+.coupon{
+    transform: rotate(270deg);
+    unicode-bidi: bidi-override;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7E7E7E;
+    background: #ECE0FF;
+    font-weight: 700;
+}
+.subtitle{
+    font-weight: 800;
+    color: #464646;
+    font-size: 16px;
+}

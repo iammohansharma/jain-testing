@@ -1,0 +1,43 @@
+<app-header [showBackButton]="true"></app-header>
+
+<ion-content >
+<ion-grid class="p0">
+  <ion-row class="flex-column mx15">
+    <ion-text class="title">{{data.name}}</ion-text>
+    <p class="m0">{{data.speciality}}</p>
+  </ion-row>
+  <ion-row class="mx15">
+    <ion-col size="12" class="ion-text-start details">
+      <ion-text ><ion-icon name="star" color="green" ></ion-icon> {{data.rating}} </ion-text>
+      <ion-label class="subtitle">{{data.comboDiscount}}</ion-label>
+    <div class="flex-column ion-text-end">
+      <ion-label class="subtitle">Open now</ion-label>
+      <ion-label class="subtitle" style="color: #F35858;">{{data.openingTime}}</ion-label>
+    </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="wp100 mx10">
+<app-coupons [Items]="coupons"></app-coupons>
+  </ion-row>
+
+  <ion-row class="mx15">
+     <ion-item lines="none" class="search-bar">
+      <ion-icon name="search-outline" src="assets/images/search.svg" slot="start" class="mr13"></ion-icon>
+      <ion-input placeholder="Search within menu..."></ion-input>
+     </ion-item>
+  </ion-row>
+  
+  <ion-row class="toggle-actions mx15 mb10 mt10">
+    <ion-col size="12" class="ion-text-end">
+      <ion-toggle mode="ios" class="mr5" color="green" (ionChange)="onVegToggleChange($event)" value="veg"> <ion-text color="green">Veg</ion-text> </ion-toggle>
+      <ion-toggle mode="ios"color="red" (ionChange)="onNonVegToggleChange($event)" value="non-veg"> <ion-text color="red">Non-veg</ion-text> </ion-toggle>
+
+    </ion-col>
+  </ion-row>
+
+  <div class="top-seller">
+    <app-product-items [Items]="topSelling"></app-product-items>
+  </div>
+   
+</ion-grid>
+</ion-content>
